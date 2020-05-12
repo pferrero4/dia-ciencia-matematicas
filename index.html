@@ -82,7 +82,10 @@
                     },
                         function (isConfirm) {
                             if (isConfirm) {
-                                window.location = "http://" + winningSegment.text;
+                                if (winningSegment.text == 'Experimento 1') {
+                                    window.location = "https://pferrero4.wixsite.com/dia-ciencia-mates";
+                                } 
+
                             } else {
                                 leerElementos();
                             }
