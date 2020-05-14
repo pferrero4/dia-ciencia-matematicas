@@ -68,7 +68,6 @@
                 var ctx;
                 function Mensaje() {
                     winningSegment = objRuleta.getIndicatedSegment();
-                    SonidoFinal();
                     swal({
                         title: " ¡ " + winningSegment.text + " !",
 
@@ -88,8 +87,10 @@
                                     window.location = "https://pferrero4.wixsite.com/dia-ciencia-mates/experimento-2";
                                 } else if (winningSegment.text == 'Experimento 3') {
                                     window.location = "https://pferrero4.wixsite.com/dia-ciencia-mates/experimento-3";
-                                } else {
+                                } else if (winningSegment.text == 'Experimento 4') {
                                     window.location = "https://pferrero4.wixsite.com/dia-ciencia-mates/experimento-4";
+                                } else {
+                                    window.location = "https://pferrero4.wixsite.com/dia-ciencia-mates/experimento-5";
                                 }
 
                             } else {
@@ -161,17 +162,12 @@
                     ElementosRuleta.push({ 'fillStyle': "#EBE52A", 'text': 'Experimento 2' });
                     ElementosRuleta.push({ 'fillStyle': "#EB3E2A", 'text': 'Experimento 3' });
                     ElementosRuleta.push({ 'fillStyle': "#C12AEB", 'text': 'Experimento 4' });
-
+                    ElementosRuleta.push({ 'fillStyle': "#1EBF10", 'text': 'Experimento 5' });
 
                     DibujarRuleta(ElementosRuleta);
                 }
                 leerElementos();
-                var audio = new Audio('alarma.mp3');  // Create audio object and load desired file.
-                function SonidoFinal() {
-                    audio.pause();
-                    audio.currentTime = 0;
-                    audio.play();
-                }
+                
 
             </script>
         </div>
