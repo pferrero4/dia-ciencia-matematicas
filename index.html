@@ -15,9 +15,8 @@
 
     <meta property="og:url" content="https://pferrero4.github.io/dia-ciencia-matematicas/" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="La ruleta (Rifa cosas)" />
-    <meta property="og:description"
-        content="Con esta ruleta online puedes rifar lo que gustes, solo llena la lista y genera tu ruleta" />
+    <meta property="og:title" content="La ruleta matemática" />
+    <meta property="og:description" content="La Ruleta Matemática" />
     <meta property="og:image" content="https://pferrero4.github.io/dia-ciencia-matematicas/img/ruleta.jpg" />
 
 </head>
@@ -41,11 +40,36 @@
             <div class="container-fluid">
 
                 <div class="row">
-
-                    <div class="col-7 text-center">
+                    <div class="col-4">
                         <br />
-                        <input id="bigButton" class="btn-block btn-lg btn btn-success "
-                            onclick="objRuleta.startAnimation(); this.disabled=true;" value="Girar" type="button" />
+                        <div class="card">
+                            <img src="img/imagentexto.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title ">La ruleta matemática</h4>
+                                <p class="card-text text-justify">Para este día tan especial en honor a todos los
+                                    descubrimientos e investigaciones
+                                    científicas, las cuales nos han hecho progresar a todos los seres humanos, nos hemos
+                                    juntado
+                                    5 alumnos de 4º ESO C, Juan Llosa, Alejandra Leal, Inés Frovel, Carolina Verdugo y
+                                    Paula
+                                    Ferrero. Y hemos decidido realizar 5 experimentos distintos y variados, pero todos
+                                    relacionados con un tema que nos acompaña desde 1º de la ESO hasta 2º de BACH, este
+                                    tema es
+                                    “Los Volúmenes”. Nosotros hemos querido ir más allá de volúmenes de figuras
+                                    geométricas, por
+                                    lo que hemos decidido aplicarlos en otras áreas como por ejemplo, el cuerpo humano,
+                                    entre
+                                    otras. Para averiguar de qué experimentos se tratan, </p>
+                                <input id="bigButton" class="btn-block btn-lg btn btn-success "
+                                    onclick="objRuleta.startAnimation(); this.disabled=true;" value="¡Gira la ruleta!"
+                                    type="button" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 text-left">
+                        <br />
+                        <!-- <input id="bigButton" class="btn-block btn-lg btn btn-success "
+                            onclick="objRuleta.startAnimation(); this.disabled=true;" value="Girar" type="button" /> -->
                         <div id="canvasContainer" onclick="objRuleta.startAnimation();bigButton.disabled = true;">
                             <canvas id='Ruleta' width='700' height='690'>
 
@@ -167,7 +191,7 @@
                     DibujarRuleta(ElementosRuleta);
                 }
                 leerElementos();
-                
+
 
             </script>
         </div>
